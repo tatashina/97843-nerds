@@ -1,0 +1,27 @@
+body {
+	font-family: "Roboto Regular", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+
+.intro-main-text {
+	font-family: "Roboto Meduim", "Arial", sans-serif;
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+}
+
+.btn {
+	font-family: "Roboto Meduim", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.site-navigation-link {
+	font-family: "Roboto Meduim", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;	
+}
