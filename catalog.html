@@ -10,16 +10,18 @@
 			<div class="container">
 				<nav class="main-navigation">
 					<a class="main-header-logo" href="index.html">
-						<img src="img/nerds-logo.svg" alt="Логотип nerds">
+						<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds">
 					</a>
 					<ul class="site-navigation"> 
 						<li class="site-navigation-item"><a href="info.html" class="site-navigation-link">Студия</a></li>
 						<li class="site-navigation-item"><a href="clients.html" class="site-navigation-link">Клиенты</a></li>
-						<li class="site-navigation-item site-navigation-current">Магазин</li>
+						<li class="site-navigation-item site-navigation-current"><a>Магазин</a></li>
 						<li class="site-navigation-item"><a href="contacts.html" class="site-navigation-link">Контакты</a></li>
 					</ul>
 					<ul class="user-account">
-						<li class="user-account-item"><a href="cart.html" class="user-account-link user-account-link-cart">Корзина</a></li>
+						<li class="user-account-item">
+							<a href="cart.html" class="user-account-link user-account-link-cart">Корзина</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -46,10 +48,14 @@
 									</div>
 								</div>
 								<div class="range-manually"> <!-- сделать label'ами -->
-									<span class="range-text">ОТ</span>
-									<input type="text" name="from">
-									<span class="range-text">ДО</span>
-									<input type="text" name="to">
+									<label class="range-text">
+										ОТ
+										<input type="text" name="from">
+									</label>
+									<label class="range-text">
+										ДО
+										<input type="text" name="to">
+									<label>
 								</div>
 							</section>
 						</fieldset>
@@ -85,7 +91,7 @@
 									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="checkbox3" checked>
 									<label for="checkbox3">Новости</label>
 								</li>
-								<li class="filter-option">
+								<li class="filter-option">~
 									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="checkbox4">
 									<label for="checkbox4">Галерея</label>
 								</li>
@@ -101,9 +107,9 @@
 				<section class="sort">
 					<h2>Сортировать:</h2>
 					<ul class="sort-list">
-						<li class="sort-item"><a class="sort-item-link">По цене</a></li> 
-						<li class="sort-item"><a class="sort-item-link">По типу</a></li>
-						<li class="sort-item"><a class="sort-item-link">По названию</a></li>
+						<li class="sort-item"><a class="sort-item-link" href="#">По цене</a></li> 
+						<li class="sort-item"><a class="sort-item-link" href="#">По типу</a></li>
+						<li class="sort-item"><a class="sort-item-link" href="#">По названию</a></li>
 						<li class="sort-item"><a class="sort-button-up" href="#"></a></li>
 						<li class="sort-item"><a class="sort-button-down" href="#"></a></li>				
 					</ul>
@@ -112,7 +118,7 @@
 					<h2 class="visually-hidden">Каталог сайтов</h2>
 					<ul class="catalog-list">
 						<li class="catalog-item">
-							<img src="img/img-sedona.jpg" alt="Sedona"> 
+							<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"> 
 							<div class="hover-catalog-item-info">
 								<a href="catalog-item.html"><h3 class="catalog-item-title">Sedona</h3></a> 
 								<p class="catalog-item-text">Информационный сайт для туристов</p>
@@ -120,7 +126,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
-							<img src="img/img-pink.jpg" alt="Pink"> 
+							<img src="img/img-pink.jpg" width="360" height="576" alt="Pink"> 
 							<div class="hover-catalog-item-info">
 								<a href="catalog-item.html"><h3 class="catalog-item-title">Pink APP</h3></a> 
 								<p class="catalog-item-text">Продуктовый лендинг приложения для iOS и Android</p>
@@ -128,7 +134,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
-							<img src="img/img-barbershop.jpg" alt="Barbershsop"> 
+							<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershsop"> 
 							<div class="hover-catalog-item-info">
 								<a href="catalog-item.html"><h3 class="catalog-item-title">Barbershsop</h3></a> 
 								<p class="catalog-item-text">Сайт салоны красоты. Для мужчин, да.</p>
@@ -136,7 +142,7 @@
 							</div>
 						</li>
 						<li class="catalog-item">
-							<img src="img/img-mishka.jpg" alt="Mishka"> 
+							<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"> 
 							<div class="hover-catalog-item-info">
 								<a href="catalog-item.html"><h3 class="catalog-item-title">Mishka</h3></a> 
 								<p class="catalog-item-text">Интернет-магазин  вязаных игрушек</p>
@@ -144,7 +150,7 @@
 							</div>
 						</li>	
 						<li class="catalog-item">
-							<img src="img/img-aplus.jpg" alt="Aplus"> 
+							<img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus"> 
 							<div class="hover-catalog-item-info">
 								<a href="catalog-item.html"><h3 class="catalog-item-title">A Plus</h3></a> 
 								<p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
@@ -152,7 +158,7 @@
 							</div>
 						</li>																					
 						<li class="catalog-item">
-							<img src="img/img-kvast.jpg" alt="Kvast"> 
+							<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"> 
 							<div class="hover-catalog-item-info">
 								<a href="catalog-item.html"><h3 class="catalog-item-title">КВАСТ</h3></a> 
 								<p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
@@ -172,6 +178,8 @@
 				<div class="map-container">			
 					<h2 class="visually-hidden">Расположение студии</h2>
 					<iframe src="https://www.google.com/maps" width="600" height="450" style="border:0" allowfullscreen></iframe>
+					<img src="img/map.png" width="1400" height="416" alt="map"> <!-- если iframe не загрузится -->
+					<img src="img/map-marker.png" width="231" height="190" alt="map-marker"> <!-- если iframe не загрузится -->
 					<div class="map-description">
 						<div class="small-container">
 							<h3 class="map-title">NЁRDS DESIGN STUDIO</h3>
@@ -186,10 +194,10 @@
 		</main>
 		<footer class="main-footer">
 			<div class="container">	
-				<ul class="social">
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+				<ul class="social"> 
+					<li><a class="social-button vk" href="#">Вконтакте</a></li> <!-- заглушки, на случай если js не подгрузится-->
+					<li><a class="social-button fb" href="#">Фейсбук</a></li>
+					<li><a class="social-button insta" href="#">Инстаграм</a></li>
 				</ul>
 				<b class="main-footer-slogan">Давайте дружить, это выгодно!</b>
 				<span class="main-footer-text">Скидка 10% для друзей из социальных сетей.</span>
@@ -212,7 +220,7 @@
 					</label>
 					<button class="button">Отправить</button>
 				</form>
-			<span class="modal-close">x</span>
+			<button class="modal-close" type="button">Закрыть</button> <!-- скрыть текст c помощью font-size:0 -->
 		</section>
 	</body>
 </html>
