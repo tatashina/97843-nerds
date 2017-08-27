@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -47,7 +49,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="range-manually"> <!-- сделать label'ами -->
+								<div class="range-manually"> 
 									<label class="range-text">
 										ОТ
 										<input type="text" name="from">
@@ -91,7 +93,7 @@
 									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="checkbox3" checked>
 									<label for="checkbox3">Новости</label>
 								</li>
-								<li class="filter-option">~
+								<li class="filter-option">
 									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="checkbox4">
 									<label for="checkbox4">Галерея</label>
 								</li>
@@ -101,7 +103,7 @@
 								</li>
 							</ul> 
 						</fieldset>
-						<button type="submit" class="filter-button button">Показать</button>
+						<button type="submit" class="btn filter-btn btn-grey">Показать</button>
 					</form>
 				</section>
 				<section class="sort">
@@ -194,7 +196,7 @@
 		</main>
 		<footer class="main-footer">
 			<div class="container">	
-				<ul class="social"> 
+				<ul class="social-list"> 
 					<li><a class="social-button vk" href="#">Вконтакте</a></li> <!-- заглушки, на случай если js не подгрузится-->
 					<li><a class="social-button fb" href="#">Фейсбук</a></li>
 					<li><a class="social-button insta" href="#">Инстаграм</a></li>
@@ -218,7 +220,7 @@
 						Текст письма:
 						<textarea name="mail" placeholder="В свободной форме"></textarea>
 					</label>
-					<button class="button">Отправить</button>
+					<button class="btn btn-red">Отправить</button>
 				</form>
 			<button class="modal-close" type="button">Закрыть</button> <!-- скрыть текст c помощью font-size:0 -->
 		</section>

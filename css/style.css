@@ -1,27 +1,411 @@
 body {
+	margin: 0;
+	padding: 0;
+
 	font-family: "Roboto Regular", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
 	color: #283136;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+
+/* HEADER */
+/* navigation */
+.main-header {
+	background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-account {
+	list-style: none;
+}
+
+.site-navigation-current {
+	text-decoration: underline;
+	color: #fb565a; /* как сделать этот цвет у подчеркивания?? text-decoration-color не поддерживается */
+}
+
+.main-navigation a, /* почему-то не становятся жирнее */
+.user-account a {
+	font-family: "Roboto Meduim", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;	
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.user-account a:hover,
+.user-account a:focus {
+	color: #fb565a;
+}
+
+.main-navigation a:active,
+.user-account a:active {
+	color: rgba(0,0,0,0.3);
+}
+
+
+/* logo */
+.main-header-logo:hover,
+.main-header-logo:focus {
+	opacity: 0.8;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
+
+/* SLIDER */
+.intro {
+	background-color: #eeeeee;
 }
 
 .intro-main-text {
 	font-family: "Roboto Meduim", "Arial", sans-serif;
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.intro-slide p {
+	text-transform: none;
+}
+
+
+/* CATALOG */
+.catalog-list {
+	list-style: none;
+}
+
+.catalog {
+	background-color: #eeeeee;	
+}
+
+.catalog-the-title { /*или catalog-list-item h3? */
+	font-family: "Roboto Bold", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
 	color: #000000;
 }
 
-.btn {
-	font-family: "Roboto Meduim", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 18px;
-	/*color: #ffffff;*/
+.catalog-list-item p {
+	text-transform: none;
 }
 
-.site-navigation-link {
+
+/* DESCRIPTION */
+.description-lid {
 	font-family: "Roboto Meduim", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
 	color: #000000;	
+}
+
+.description-text,
+.description-item {
+	text-transform: none;
+}
+
+.description-we-can-do {
+	font-family: "Roboto Bold", "Arial", sans-serif;
+	font-weight: 700;
+	color: #000000;	
+}
+
+/* NUMBERS */
+.numbers-title {
+	font-family: "Roboto Bold", "Arial", sans-serif;
+	font-weight: 700;
+	color: #000000;		
+}
+
+.numbers-first-line {
+	font-family: "Roboto Bold", "Arial", sans-serif;
+	font-size: 45px;
+	line-height: 10,06px;
+	font-weight: 700;
+	color: #000000;		
+}
+
+.numbers-second-line {
+	line-height: 18px;
+}
+
+
+/* PROJECT LINKS */
+.project-links-item {
+    list-style: none;
+}
+
+.projects-link {
+    opacity: 0.2;
+}
+
+.projects-link:hover {
+    opacity: 1;
+}
+
+.projects-link:active {
+    opacity: 0.1;
+}
+
+
+/* MAP DESCRIPTION */
+.map-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.map-address,
+.map-phone {
+	line-height: 18px;
+	color: #666666;
+	text-transform: none;
+}
+
+
+/* FOOTER */
+.main-footer{
+	text-transform: none;
+}
+
+.social-list {
+	list-style: none;
+}
+
+.social-button {
+	/*font-size: 0; */ /*Расскоментить, когда будут картинки*/
+}
+
+.main-footer-slogan {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.main-footer-text {
+	line-height: 22px;
+	color: #444444;
+}
+
+
+/* MODAL: WRITE US */
+.modal-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.login-form label {
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: none;
+}
+
+.login-form input,
+.login-form textarea {
+	font: inherit;
+	border: 2px solid #d7dcde;
+	outline: none;
+}
+
+.login-form input:hover,
+.login-form textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.login-form input:focus,
+.login-form textarea:focus {
+	border: 2px solid #000000;
+}
+
+.login-form input:invalid,
+.login-form textarea:invalid {
+	border: 2px solid #e74246;
+}
+
+.login-form input::-webkit-input-placeholder,
+.login-form textarea::-webkit-input-placeholder {
+    line-height: 18px;
+    color: rgba(68,68,68,0.5);
+}
+
+.login-form input:focus::-webkit-input-placeholder,
+.login-form textarea:focus::-webkit-input-placeholder {
+    color: #444444;
+}
+
+.modal-close {
+	/*font-size: 0; */ /*Расскоментить, когда будут картинки*/
+}
+
+
+/* INNER PAGE: CATALOG */
+.main-title-sect {
+	background-color: #eeeeee;
+}
+
+.main-title {
+	font-size: 55px; 
+	line-height: 55px;
+	font-weight: 500; /* надо ли каждый раз задавать font-family? */
+	color: #000000;
+}
+
+/* filters */
+.filter fieldset {
+	border: none;
+}
+
+.filter ul {
+    list-style: none;
+    text-transform: none;
+}
+
+.filter legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;	
+	color: #000000;
+}
+
+.filter label {
+	line-height: 20px;
+}
+
+.filter label:hover {
+	color: #000000;
+}
+
+.filter label:disabled {
+	color: rgba(40,49,54,0.3);
+}
+
+/* sort */
+.sort h2 {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.sorting-list {
+	list-style: none;
+}
+
+.sorting-item a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.3);
+}
+
+.sorting-item a:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.sorting-item a:active {
+	color: #000000;
+}
+
+.sorting-current a {
+	color: #000000;
+}
+
+/* BUTTONS */
+.btn {
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.filter-btn {
+	color: #000000;	
+}
+
+.btn-red {
+	background-color: #fb565a;
+}
+
+.btn-red:hover {
+	background-color: #e74246;
+}
+
+.btn-red:active {
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
+}
+
+.btn-green {
+	background-color: #00ca74;
+}
+
+.btn-green:active {
+	background-color: #00aa62;
+	color: rgba(255,255,255,0.3);
+}
+
+.btn-green:hover {
+	background-color: #00bc6c;
+}
+
+.btn-yellow {
+	background-color: #efc84a;
+}
+
+
+.btn-yellow:hover {
+	background-color: #eab534;
+}
+
+.btn-yellow:active {
+	background-color: #e5a722;
+	color: rgba(255,255,255,0.3);
+}
+
+.btn-grey {
+	background-color: #eeeeee;
+}
+
+
+.btn-grey:hover {
+	background-color: #dfdfdf;
+}
+
+.btn-grey:active {
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
 }
