@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Roboto Regular", "Arial", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -40,13 +40,11 @@ a {
 }
 
 .site-navigation-current {
-	text-decoration: underline;
-	color: #fb565a; /* как сделать этот цвет у подчеркивания?? text-decoration-color не поддерживается */
+	border-bottom: 2px solid #fb565a; /* сделала заготовочку, думаю, потом расскажут, как сделать короткой и аккуратной */
 }
 
-.main-navigation a, /* почему-то не становятся жирнее */
+.main-navigation a, /* ура! стало жирнее */
 .user-account a {
-	font-family: "Roboto Meduim", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
@@ -83,7 +81,6 @@ a {
 }
 
 .intro-main-text {
-	font-family: "Roboto Meduim", "Arial", sans-serif;
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
@@ -105,8 +102,7 @@ a {
 	background-color: #eeeeee;
 }
 
-.catalog-the-title { /*или catalog-list-item h3? */
-	font-family: "Roboto Bold", "Arial", sans-serif;
+.catalog-the-title { 
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
@@ -120,7 +116,6 @@ a {
 
 /* DESCRIPTION */
 .description-lid {
-	font-family: "Roboto Meduim", "Arial", sans-serif;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -133,22 +128,19 @@ a {
 }
 
 .description-we-can-do {
-	font-family: "Roboto Bold", "Arial", sans-serif;
 	font-weight: 700;
 	color: #000000;	
 }
 
 /* NUMBERS */
 .numbers-title {
-	font-family: "Roboto Bold", "Arial", sans-serif;
 	font-weight: 700;
 	color: #000000;
 }
 
 .numbers-first-line {
-	font-family: "Roboto Bold", "Arial", sans-serif;
 	font-size: 45px;
-	line-height: 10,06px;
+	line-height: 10px;
 	font-weight: 700;
 	color: #000000;
 }
@@ -280,7 +272,7 @@ a {
 .main-title {
 	font-size: 55px; 
 	line-height: 55px;
-	font-weight: 500; /* надо ли каждый раз задавать font-family? */
+	font-weight: 500; 
 	color: #000000;
 }
 
