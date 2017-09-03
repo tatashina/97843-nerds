@@ -8,66 +8,83 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
-			<div class="container">
-				<nav class="main-navigation">
-					<a class="main-header-logo" href="index.html">
-						<img src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип nerds">
-					</a>
-					<ul class="site-navigation">
-						<li class="site-navigation-item"><a href="info.html" class="site-navigation-link">Студия</a></li>
-						<li class="site-navigation-item"><a href="clients.html" class="site-navigation-link">Клиенты</a></li>
-						<li class="site-navigation-item"><a href="catalog.html" class="site-navigation-link">Магазин</a></li>
-						<li class="site-navigation-item"><a href="contacts.html" class="site-navigation-link">Контакты</a></li>
-					</ul>
-					<ul class="user-account">
-						<li class="user-account-item"><a href="cart.html" class="user-account-link user-account-link-cart">Корзина</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<h1 class="visually-hidden">Веб-студия nerds</h1>
-			<section class="intro">
+		<div class="container-gray">
+			<header class="main-header">
 				<div class="container">
-					<div class="intro-slide intro-slide01">
-						<div class="container-small"> <!-- размер фон. изобр: 759х411-->
-							<p class="intro-main-text">Долго, дорого, скурпулезно.</p>
-							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p> 
-							<a href="info.html" class="btn btn-red">Узнать больше</a>
-						</div>
-					</div>
-					<!--<div class="intro-slide intro-slide02">
-						<div class="container-small">
-							<p class="intro-main-text">Любим математику как никто другой</p>
-							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-							<a href="info.html" class="btn btn-red">Узнать больше</a>
-						</div>
-					</div>
-					<div class="intro-slide intro-slide03">
-						<div class="container-small">
-							<p class="intro-main-text">Только ночь, только хардкор</p>
-							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-							<a href="info.html" class="btn btn-red">Узнать больше</a>
-						</div>
-					</div> -->
+					<nav class="main-navigation">
+						<a class="main-header-logo" href="index.html">
+							<img class="main-logo" src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип nerds">
+						</a>
+						<ul class="site-navigation">
+							<li class="site-navigation-item"><a href="info.html" class="site-navigation-link">Студия</a></li>
+							<li class="site-navigation-item"><a href="clients.html" class="site-navigation-link">Клиенты</a></li>
+							<li class="site-navigation-item"><a href="catalog.html" class="site-navigation-link">Магазин</a></li>
+							<li class="site-navigation-item"><a href="contacts.html" class="site-navigation-link">Контакты</a></li>
+						</ul>
+						<ul class="user-account">
+							<li class="user-account-item"><a class="cart-link" href="cart.html" class="user-account-link user-account-link-cart">Корзина</a></li>
+						</ul>
+					</nav>
 				</div>
-			</section>
+			</header>
+		</div>
+		<main>
+
+		<div class="container-gray">
+			<h1 class="visually-hidden">Веб-студия nerds</h1>
+			<div class="container">
+			      <div class="slider">
+			        <input type="radio" id="btn-1" name="toggle" checked>
+			        <input type="radio" id="btn-2" name="toggle">
+			        <input type="radio" id="btn-3" name="toggle">
+			        <div class="slider-controls">
+			          <label for="btn-1"></label>
+			          <label for="btn-2"></label>
+			          <label for="btn-3"></label>
+			        </div>
+			        <div class="slides">
+			          <div class="slide">
+			            <div class="slide-text">
+			              <div class="intro-main-text">Долго, дорого, скрупулезно.</div>
+			              <p>Математически выверенный дизайн<br>
+			  для вашего сайта или мобильного приложения.</p>
+			              <a class="btn btn-red" href="#">Узнать больше</a>
+			            </div>
+			          </div>
+			          <div class="slide">
+			            <div class="slide-text">
+			              <div class="intro-main-text">Любим математику как никто другой</div>
+			              <p>Никакого креатива, только математические формулы<br>
+			  для расчета идеальных пропорций</p>
+			              <a class="btn btn-red" href="#">Узнать больше</a>
+			            </div>
+			          </div>
+			          <div class="slide">
+			            <div class="slide-text">
+			              <div class="intro-main-text">Только ночь, только хардкор</div>
+			              <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+			              <a class="btn btn-red" href="#">Узнать больше</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			</div>
+		</div>
 			<section class="catalog-services">
 				<div class="container">
 					<h2 class="visually-hidden">Услуги</h2>
 					<ul class="catalog-services-list">
-						<li class="catalog-services-list-item"> <!-- размер фон. изобр: 300х146-->
+						<li class="catalog-services-list-item serv-red"> <!-- размер фон. изобр: 300х146-->
 							<h3 class="catalog-services-the-title">Веб-сайты</h3>
 							<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 							<a href="info.html" class="btn btn-red">Заказать</a>
 						</li>
-						<li class="catalog-services-list-item">
+						<li class="catalog-services-list-item serv-green">
 							<h3 class="catalog-services-the-title">Приложения</h3>
 							<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 							<a href="info.html" class="btn btn-green">Заказать</a>
 						</li>
-						<li class="catalog-services-list-item">
+						<li class="catalog-services-list-item serv-yellow">
 							<h3 class="catalog-services-the-title">Презентации</h3>
 							<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 							<a href="info.html" class="btn btn-yellow">Заказать</a>
@@ -77,11 +94,11 @@
 			</section>
 			<div class="container">			
 				<section class="descr">
-					<div class="desctiption">
+					<div class="description">
 						<h2 class="visually-hidden">Описание</h2>
-						<b class="description-lid">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+						<b class="description-lid">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
 						<p class="description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-						превыше креатива. Работаем не покладая рук, как роботы</p>
+						превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<b class="description-we-can-do">Выполняем заказы на разработку:</b>
 						<ul class="description-list">
 							<li class="description-item">
@@ -97,7 +114,7 @@
 					</div>
 					<div class="numbers">
 						<a class="small-header-logo" href="index.html">
-							<img src="img/logo-small.png" width="360" height="208" alt="Логотип nerds">
+							<img class="small-img-logo" src="img/logo-small.png" width="360" height="208" alt="Логотип nerds">
 						</a>
 						<p class="numbers-title">С 2004 года любим точность во всем:</p>
 						<table>
@@ -107,9 +124,9 @@
 								<td>50<sup>%</sup></td>
 							</tr>
 							<tr class="numbers-second-line">
-								<td>Уровень самоотдачи</td>
-								<td>Соблюдение сроков</td>
-								<td>Минимальная предоплата</td>
+								<th>Уровень самоотдачи</th>
+								<th>Соблюдение сроков</th>
+								<th>Минимальная предоплата</th>
 							</tr>
 						</table>
 					</div>
@@ -146,7 +163,7 @@
 				<div class="map-container">
 					<h2 class="visually-hidden">Расположение студии</h2>
 					<!-- <iframe src="https://www.google.com/maps" width="600" height="450" style="border:0" allowfullscreen></iframe> -->
-					<img src="img/map.png" width="1400" height="416" alt="map"> <!-- если iframe не загрузится -->
+					<img class="image-map" src="img/map.png" width="1400" height="416" alt="map"> <!-- если iframe не загрузится -->
 					<img src="img/map-marker.png" width="231" height="190" alt="map-marker"> <!-- если iframe не загрузится -->
 					<div class="map-description">
 						<div class="small-container">
