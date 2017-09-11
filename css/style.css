@@ -1559,3 +1559,13 @@ input[type="radio"].visually-hidden {
     animation: shake 0.6s;
 }
 
+/* Iframe для map */
+
+.map iframe {
+    z-index: 1000;	
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 456px; /* не меняется высота вообще никак */
+    width: 100%; /* И ширина не растягивается на весь экран */
+}
