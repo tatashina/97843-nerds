@@ -13,10 +13,10 @@ body {
 	background-color: #ffffff;
 }
 
-/* * {
+* {
 	outline: 1px solid blue;
 }  
-   */
+  
 a {
 	text-decoration: none;
 }
@@ -1419,3 +1419,143 @@ input[type="radio"].visually-hidden {
 .pagination-item-next {
 	padding: 16px 78px;
 }
+
+/* сетка - модальное окно */
+
+.modal-contact {
+	display: none;
+    position: fixed;
+    top: 37px;
+    left: 50%;
+    z-index: 1000;
+    width: 760px;
+    margin-left: -480px;
+    padding: 67px 100px 83px 100px;
+	background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75); 
+}
+
+.modal-title {
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+    text-transform: none;
+}
+
+.customer-information {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.login-form label {
+    display: block;
+    margin-right: 40px; 
+}
+
+.login-name,
+.login-email,
+.login-mail {
+	margin-top: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"] {
+    box-sizing: border-box;
+    width: 360px;
+    padding: 13px;	
+    border-radius: 3px;
+}
+
+.login-form textarea {
+    box-sizing: border-box;
+    width: 760px;
+    min-height: 116px;
+    padding-top: 9px;
+    padding-left: 15px;
+    margin-bottom: 44px;
+    resize: none;
+    border-radius: 3px;
+}
+
+
+.modal-contact .btn {
+    padding: 15px 84px;
+   	box-shadow: none;
+	border: none;
+}
+
+.modal-close {
+    position: absolute;
+    right: 89px;
+    top: 78px;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    background-image: url("../img/close-cross.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+    border: 0;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
