@@ -921,18 +921,18 @@ input[type="radio"].visually-hidden {
 
 }
 
-.small-container {
+
+.contacts-info .btn {
+	margin-top: 36px;
+	padding: 16px 45px;
+}
+
+.contacts-info {
 	position: absolute;
 	top: 54px;
-	left: 95px;
 	padding: 50px;
 	background-color: #ffffff;
 	z-index: 200;
-}
-
-.small-container .btn {
-	margin-top: 36px;
-	padding: 16px 45px;
 }
 
 .map-title {
